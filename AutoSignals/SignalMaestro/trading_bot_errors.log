@@ -1,0 +1,222 @@
+[31m[2025-08-17 02:52:41] [ERROR   ] [binance_trader:45] initialize() - Failed to initialize Binance exchange: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399161897&recvWindow=10000&signature=9891c8b6455c8c45e32f29a37ad22e242a785c84df033f215f74d6fa916274ff 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:52:41] [ERROR   ] [trading_bot:64] initialize() - Failed to initialize components: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399161897&recvWindow=10000&signature=9891c8b6455c8c45e32f29a37ad22e242a785c84df033f215f74d6fa916274ff 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:52:51] [ERROR   ] [binance_trader:45] initialize() - Failed to initialize Binance exchange: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399171842&recvWindow=10000&signature=2b6e3412df847a1721fd25dcd07651eca59d188338a15391ed1373633a70a59b 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:52:51] [ERROR   ] [trading_bot:64] initialize() - Failed to initialize components: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399171842&recvWindow=10000&signature=2b6e3412df847a1721fd25dcd07651eca59d188338a15391ed1373633a70a59b 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:53:07] [ERROR   ] [binance_trader:45] initialize() - Failed to initialize Binance exchange: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399187318&recvWindow=10000&signature=69157cb4c175193fae0197781f83e8424b66ac5998553982c1f20ea6f0814e1f 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:53:31] [ERROR   ] [binance_trader:45] initialize() - Failed to initialize Binance exchange: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399211123&recvWindow=10000&signature=bebbe0238922794a4e49d2476ae4901f49dab769dd558acf5ebeb74314224be7 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:53:32] [ERROR   ] [webhook_server:875] log_exception() - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/webhook_server.py", line 49, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html[0m
+[31m[2025-08-17 02:53:32] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399212573&recvWindow=10000&signature=33d60953ea67fc80fa8b51f643bd22893762568f20a044419c497ce75df8735e 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:53:32] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399212573&recvWindow=10000&signature=33d60953ea67fc80fa8b51f643bd22893762568f20a044419c497ce75df8735e 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:53:42] [ERROR   ] [webhook_server:875] log_exception() - Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 1511, in wsgi_app
+    response = self.full_dispatch_request()
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 919, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 917, in full_dispatch_request
+    rv = self.dispatch_request()
+         ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/app.py", line 902, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/webhook_server.py", line 49, in index
+    return render_template('index.html')
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/templating.py", line 149, in render_template
+    template = app.jinja_env.get_or_select_template(template_name_or_list)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/jinja2/environment.py", line 1087, in get_or_select_template
+    return self.get_template(template_name_or_list, parent, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/jinja2/environment.py", line 1016, in get_template
+    return self._load_template(name, globals)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/jinja2/environment.py", line 975, in _load_template
+    template = self.loader.load(self, name, self.make_globals(globals))
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/jinja2/loaders.py", line 126, in load
+    source, filename, uptodate = self.get_source(environment, name)
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/templating.py", line 65, in get_source
+    return self._get_source_fast(environment, template)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/flask/templating.py", line 99, in _get_source_fast
+    raise TemplateNotFound(template)
+jinja2.exceptions.TemplateNotFound: index.html[0m
+[31m[2025-08-17 02:54:32] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399272904&recvWindow=10000&signature=a027dd045472000cbfecd0164b5c99468dcf2c7ea1b796c299cfe0b88f5a68f2 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:54:32] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399272904&recvWindow=10000&signature=a027dd045472000cbfecd0164b5c99468dcf2c7ea1b796c299cfe0b88f5a68f2 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:54:35] [ERROR   ] [binance_trader:45] initialize() - Failed to initialize Binance exchange: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399275839&recvWindow=10000&signature=93016e1cbc985d143b1ce323e380078cad108d5412a6433e6285376e2d438f33 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:54:37] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399277290&recvWindow=10000&signature=abee9b94930b47cccfe49c0b3d5f02adcbf5cc7df5e04a45ef27d4b3ff59c21b 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:54:37] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399277290&recvWindow=10000&signature=abee9b94930b47cccfe49c0b3d5f02adcbf5cc7df5e04a45ef27d4b3ff59c21b 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:54:48] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: Task <Task pending name='Task-24' coro=<WebhookServer._get_portfolio_data() running at /home/runner/workspace/webhook_server.py:447> cb=[_run_until_complete_cb() at /nix/store/7d088dip86hlzri9sk0h78b63yfmx0a0-python3-3.11.13/lib/python3.11/asyncio/base_events.py:181]> got Future <Task pending name='Task-15' coro=<Exchange.load_markets_helper() running at /home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/ccxt/async_support/base/exchange.py:295> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup()]> attached to a different loop[0m
+[31m[2025-08-17 02:54:48] [ERROR   ] [webhook_server:459] _get_portfolio_data() - Error getting portfolio data: Task <Task pending name='Task-24' coro=<WebhookServer._get_portfolio_data() running at /home/runner/workspace/webhook_server.py:447> cb=[_run_until_complete_cb() at /nix/store/7d088dip86hlzri9sk0h78b63yfmx0a0-python3-3.11.13/lib/python3.11/asyncio/base_events.py:181]> got Future <Task pending name='Task-15' coro=<Exchange.load_markets_helper() running at /home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/ccxt/async_support/base/exchange.py:295> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup()]> attached to a different loop[0m
+[31m[2025-08-17 02:55:37] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: Task <Task pending name='Task-8' coro=<TradingBotManager.run_monitoring_loop() running at /home/runner/workspace/main.py:95> cb=[gather.<locals>._done_callback() at /nix/store/7d088dip86hlzri9sk0h78b63yfmx0a0-python3-3.11.13/lib/python3.11/asyncio/tasks.py:764]> got Future <Task pending name='Task-44' coro=<Exchange.load_markets_helper() running at /home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/ccxt/async_support/base/exchange.py:295> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup()]> attached to a different loop[0m
+[31m[2025-08-17 02:55:37] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: Task <Task pending name='Task-8' coro=<TradingBotManager.run_monitoring_loop() running at /home/runner/workspace/main.py:95> cb=[gather.<locals>._done_callback() at /nix/store/7d088dip86hlzri9sk0h78b63yfmx0a0-python3-3.11.13/lib/python3.11/asyncio/tasks.py:764]> got Future <Task pending name='Task-44' coro=<Exchange.load_markets_helper() running at /home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/ccxt/async_support/base/exchange.py:295> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup()]> attached to a different loop[0m
+[31m[2025-08-17 02:56:37] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: Task <Task pending name='Task-8' coro=<TradingBotManager.run_monitoring_loop() running at /home/runner/workspace/main.py:95> cb=[gather.<locals>._done_callback() at /nix/store/7d088dip86hlzri9sk0h78b63yfmx0a0-python3-3.11.13/lib/python3.11/asyncio/tasks.py:764]> got Future <Task pending name='Task-58' coro=<Exchange.load_markets_helper() running at /home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/ccxt/async_support/base/exchange.py:295> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup()]> attached to a different loop[0m
+[31m[2025-08-17 02:56:37] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: Task <Task pending name='Task-8' coro=<TradingBotManager.run_monitoring_loop() running at /home/runner/workspace/main.py:95> cb=[gather.<locals>._done_callback() at /nix/store/7d088dip86hlzri9sk0h78b63yfmx0a0-python3-3.11.13/lib/python3.11/asyncio/tasks.py:764]> got Future <Task pending name='Task-58' coro=<Exchange.load_markets_helper() running at /home/runner/workspace/.pythonlibs/lib/python3.11/site-packages/ccxt/async_support/base/exchange.py:295> wait_for=<_GatheringFuture pending cb=[Task.task_wakeup()]> cb=[Task.task_wakeup()]> attached to a different loop[0m
+[31m[2025-08-17 02:57:37] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399457966&recvWindow=10000&signature=5d1934190818669b424f8cf8af1b2c0db2fc3a59aa84c387d213b36ed491c8eb 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:57:37] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399457966&recvWindow=10000&signature=5d1934190818669b424f8cf8af1b2c0db2fc3a59aa84c387d213b36ed491c8eb 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:58:38] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399518277&recvWindow=10000&signature=95e5bf795870a9806ab1751cc2b942e73a24adb051b60787fbd8b7741dd90b16 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:58:38] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399518277&recvWindow=10000&signature=95e5bf795870a9806ab1751cc2b942e73a24adb051b60787fbd8b7741dd90b16 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:59:38] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399578584&recvWindow=10000&signature=7f64ddd62a4517d8003839c091fae345b4d5cc3c58023e223a8be4f87625b3fa 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 02:59:38] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399578584&recvWindow=10000&signature=7f64ddd62a4517d8003839c091fae345b4d5cc3c58023e223a8be4f87625b3fa 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:00:38] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399638906&recvWindow=10000&signature=689187838b0564fc5be7330dd044bb2be1992147262c8a930923219396ea31ba 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:00:38] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399638906&recvWindow=10000&signature=689187838b0564fc5be7330dd044bb2be1992147262c8a930923219396ea31ba 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:01:39] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399699235&recvWindow=10000&signature=a199d6741a077a7abe588f273f635690ceb801f6c6276d76ff7c29956d967990 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:01:39] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399699235&recvWindow=10000&signature=a199d6741a077a7abe588f273f635690ceb801f6c6276d76ff7c29956d967990 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:02:39] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399759540&recvWindow=10000&signature=217607a62813d884995317b9e61a77713cc43c7fa2a9ce19ebfa0804ce8a0200 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:02:39] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399759540&recvWindow=10000&signature=217607a62813d884995317b9e61a77713cc43c7fa2a9ce19ebfa0804ce8a0200 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:03:39] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399819850&recvWindow=10000&signature=7c8e4f04fc972bad7d3b7de87afe753c2fa4c9ce8a0d2792a395d50e8c794b6a 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:03:39] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399819850&recvWindow=10000&signature=7c8e4f04fc972bad7d3b7de87afe753c2fa4c9ce8a0d2792a395d50e8c794b6a 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:04:40] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399880147&recvWindow=10000&signature=9d8089e8b57a2f108a68e015e8e480c5ee4e5a4ba43aa42702abc4ca7ddc44a1 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:04:40] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399880147&recvWindow=10000&signature=9d8089e8b57a2f108a68e015e8e480c5ee4e5a4ba43aa42702abc4ca7ddc44a1 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:05:40] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399940460&recvWindow=10000&signature=f2a17415df069811ab1d34ccacd9d276242341dfe66c1f42943e55cf772128cd 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:05:40] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755399940460&recvWindow=10000&signature=f2a17415df069811ab1d34ccacd9d276242341dfe66c1f42943e55cf772128cd 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:06:40] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755400000768&recvWindow=10000&signature=e060788fb05d4850be1a2d17637ec760e3c038b7b920368d778401454e8a3e3d 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:06:40] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755400000768&recvWindow=10000&signature=e060788fb05d4850be1a2d17637ec760e3c038b7b920368d778401454e8a3e3d 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:07:41] [ERROR   ] [binance_trader:80] get_account_balance() - Error getting account balance: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755400061187&recvWindow=10000&signature=4aebccc269ebb62838652a791ebf578b6646f114ff24d38f435ec8bdd3516685 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
+[31m[2025-08-17 03:07:41] [ERROR   ] [trading_bot:129] update_portfolio_data() - Failed to update portfolio data: binance GET https://api.binance.com/sapi/v1/capital/config/getall?timestamp=1755400061187&recvWindow=10000&signature=4aebccc269ebb62838652a791ebf578b6646f114ff24d38f435ec8bdd3516685 451  {
+  "code": 0,
+  "msg": "Service unavailable from a restricted location according to 'b. Eligibility' in https://www.binance.com/en/terms. Please contact customer service if you believe you received this message in error."
+}[0m
